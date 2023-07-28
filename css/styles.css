@@ -103,10 +103,6 @@ img {
     color: var(--title-text-color);
 } */
 
-.logo-footer {
-    color: var(--light-mode-backgrounds-color);
-}
-
 /* .site-nav {
     display: flex;
     gap: 40px;
@@ -569,6 +565,10 @@ img {
 .footer {
     background-color: var(--title-text-color);
     padding: 100px 0;
+}
+
+.logo-footer {
+    color: var(--light-mode-backgrounds-color);
 }
 
 .footer-information {
