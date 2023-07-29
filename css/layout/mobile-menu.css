@@ -1,20 +1,33 @@
 @media screen and (max-width: 767px) {
-    .mobile-menu {
-      /* visibility: hidden;
-      opacity: 0;
-      pointer-events: none; */
+    .mobile-menu-backdrop {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100vh;
-      padding-bottom: 40px;
-      padding-left: 40px;
-      padding-top: 80px;
-      padding-right: 35px;
-      transition: opacity, visibility var(--transition-dur-and-fun);
+      transition: opacity var(--transition-dur-and-fun), visibility var(--transition-dur-and-fun);
       background-color: var(--primary-white-color);
       box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .mobile-menu-backdrop.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+    .mobile-menu {
+        width: 100%;
+        max-width: 428px;
+        min-height: 100%;
+        padding-left: 40px;
+        padding-right: 35px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        transition: transform var(--transition-dur-and-fun);
     }
 
     .mobile-menu-close-btn {
@@ -32,7 +45,131 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        transition: border var(--transition-dur-and-fun), background-color var(--transition-dur-and-fun);
+        transition: border var(--transition-dur-and-fun), background-color var(--transition-dur-and-fun), fill var(--transition-dur-and-fun);
         cursor: pointer;
     }
+
+    .mobile-menu-close-btn:focus {
+        background-color: var(--accent-color);
+        border: none;
+    }
+
+    .mobile-menu-close-btn:focus .obile-menu-close-icon {
+        fill: var(--primary-white-color)
+    }
+
+    .mobile-menu-navigation {
+        margin-bottom: 284px;
+    }
+
+    .mobile-menu-nav-list-link {
+        display: block;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        color: var(--title-text-color);
+        margin-bottom: 40px;
+        transition: color var(--transition-dur-and-fun);
+    }
+
+    .mobile-menu-nav-list-link:focus {
+        color: var(--accent-color);
+    }
+
+    .mobile-menu-directions-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu-directions-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu-tel {
+        display: block;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        font-style: normal;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        color: var(--secondary-accent-color);
+        transition: color var(--transition-dur-and-fun);
+    }
+
+    .mobile-menu-tel:focus {
+        color: var(--accent-color);
+    }
+
+    .mobile-menu-mail {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-style: normal;
+        letter-spacing: 0.4px;
+        color: var(--primary-text-color);
+        margin-bottom: 48px;
+        transition: color var(--transition-dur-and-fun);
+    }
+
+    .mobile-menu-mail:focus {
+        color: var(--accent-color);
+    }
+
+    .mobile-menu-social-block {
+        padding-right: 25px;
+    }
+
+    .mobile-menu-social-list {
+        display: flex;
+        gap: 56px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-social-list-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobile-menu-social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        background-color: var(--secondary-accent-color);
+        border-radius: 50%;
+        transition: background-color var(--transition-dur-and-fun);
+    }
+
+    .mobile-menu-social-list-link:focus {
+        background-color: var(--accent-color);
+    }
+
+    .mobile-menu-social-list-icon {
+        fill: var(--light-mode-backgrounds-color);
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-backdrop {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+  
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
