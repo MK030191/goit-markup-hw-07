@@ -9,3 +9,5 @@
 /* LAYOUT STYLES */
 @import './layout/header.css';
 @import './layout/hero.css';
+@import './layout/advantages.css';
+@import './layout/mobile-menu.css';

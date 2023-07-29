@@ -89,14 +89,41 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
         url('../../images/main-page/backgrounds/tablet-bg-img-@2x.png');
     }
+
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
 }
 
-.hero-title {
-    max-width: 496px;
-    margin-bottom: 36px;
-    font-size: 56px;
-    line-height: 1.07;
+
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-color: var(--title-text-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url('../../images/main-page/backgrounds/desktop-bg-img-1x.png');
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: center;
+    }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url('../../images/main-page/backgrounds/desktop-bg-img-@2x.png');
+    }
+    .hero-container {
+        padding: 188px 0;
+    }
+}
+
+
 
 
 
