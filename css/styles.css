@@ -562,7 +562,7 @@ img {
     transform: translateY(0%);
 }
 
-.footer {
+/* .footer {
     background-color: var(--title-text-color);
     padding: 100px 0;
 }
@@ -703,7 +703,7 @@ img {
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: var(--accent-color);
-}
+} */
 
 .backdrop {
     position: fixed;
