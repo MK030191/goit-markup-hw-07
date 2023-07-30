@@ -1,0 +1,46 @@
+.about-us {
+    display: none;
+}
+
+.about-us-container {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .about-us {
+        display: block;
+        max-width: 1128px;
+        justify-content: center;
+        padding-bottom: 120px;
+        margin: 0 auto;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-us-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .about-us-title {
+        text-align: center;
+        margin-bottom: 72px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--title-text-color);
+    }
+
+    .about-us-item {
+        width: calc((100% - 48px) / 3);
+    }
+}

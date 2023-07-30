@@ -282,7 +282,7 @@ img {
     letter-spacing: 0.02em;
 } */
 
-.about-us {
+/* .about-us {
     padding-top: 60px;
     padding-bottom: 120px;
 }
@@ -298,7 +298,7 @@ img {
 
 .about-us-item {
     width: calc((100% - 48px) / 3);
-}
+} */
 
 .bg-color {
     background-color: var(--light-mode-backgrounds-color);
