@@ -388,7 +388,7 @@ img {
     background-color: var(--accent-color);
 } */
 
-.customers {
+/* .customers {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -437,7 +437,7 @@ img {
 .customers-list-link:hover .customers-list-icon,
 .customers-list-link:focus .customers-list-icon {
     fill: var(--accent-color);
-}
+} */
 
 .project-filter {
     padding-top: 96px;
