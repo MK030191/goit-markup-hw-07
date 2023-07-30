@@ -705,7 +705,7 @@ img {
   background-color: var(--accent-color);
 } */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -956,5 +956,5 @@ img {
 .order-form-submit-btn:hover,
 .order-form-submit-btn:focus {
     background-color: var(--accent-color);
-}
+} */
 
