@@ -160,11 +160,6 @@
 
 @media screen and (min-width: 768px) {
     .mobile-menu-backdrop {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
+        display: none;
     }
   }

@@ -31,8 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding: 24px 16px;
 }
 
 .logo {
@@ -64,6 +63,7 @@
     .site-nav {
         display: flex;
         gap: 40px;
+
     }
     
     .directions {
@@ -74,19 +74,15 @@
         display: none;
     }
 
-    .logo {
-        margin-right: 120px;
-    }
-
     .page-navigation {
         display: flex;
+        flex-grow: 1;
         align-items: center;
-        justify-content: center;
+        flex-grow: 1;
     }
 
     .link-current {
         display: inline-block;
-        width: calc((100% - 80px) / 3);
         padding: 24px 0;
         transition: color var(--transition-dur-and-func);
         font-weight: 500;
@@ -146,10 +142,6 @@
 
     .logo {
         margin-right: 76px;
-    }
-
-    .link-current {
-        margin-right: 40px;
     }
 
     .directions-list {

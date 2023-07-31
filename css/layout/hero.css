@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 112px 0;
     background-color: var(--title-text-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url('../../images/main-page/backgrounds/mobile-bg-img-1x.png');
@@ -24,7 +25,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 112px 0;
     margin: 0 auto;
 }
 
@@ -102,6 +102,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 @media screen and (min-width: 1200px) {
     .hero {
+        padding: 158px 0;
         background-color: var(--title-text-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
         url('../../images/main-page/backgrounds/desktop-bg-img-1x.png');
