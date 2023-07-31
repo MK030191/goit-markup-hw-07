@@ -78,6 +78,10 @@
         color: var(--accent-color);
     }
 
+    .mobile-menu-link-current {
+        color: var(--accent-color);
+    }
+
     .mobile-menu-directions-list {
         display: flex;
         flex-direction: column;
