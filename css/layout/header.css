@@ -149,10 +149,9 @@
     }
 
     .directions-list {
-        display: flex;
-        gap: 40px;
         flex-direction: row;
-        justify-content: right;
+        justify-content: space-between;
+        gap: 40px;
     }
 
     .mail-tel {
