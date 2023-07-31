@@ -126,7 +126,7 @@
     }
 
     .mobile-menu-social-block {
-        padding-right: 25px;
+        display: flex;
     }
 
     .mobile-menu-social-list {
