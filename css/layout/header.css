@@ -60,7 +60,6 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        max-width: 736px;
     }
 
     .site-nav {
@@ -142,10 +141,6 @@
 
     .logo {
         margin-right: 76px;
-    }
-
-    .directions {
-        max-width: 342px;
     }
 
     .directions-list {
