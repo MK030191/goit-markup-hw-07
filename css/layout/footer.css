@@ -226,8 +226,7 @@
         flex-wrap: nowrap;
         align-items: baseline;
         gap: 0;
-        padding-left: 0;
-        margin-left: 156px;
+        padding-left: 15px;
     }
 
     .footer-message-part {
